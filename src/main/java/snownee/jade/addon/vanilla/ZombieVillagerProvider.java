@@ -30,7 +30,7 @@ public enum ZombieVillagerProvider implements IEntityComponentProvider, StreamSe
 
 	@Override
 	public boolean shouldRequestData(EntityAccessor accessor) {
-		return ((ZombieVillager) accessor).isConverting();
+		return ((ZombieVillager) accessor.getEntity()).isConverting();
 	}
 
 	@Override
